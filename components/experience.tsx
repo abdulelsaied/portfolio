@@ -17,7 +17,8 @@ export default function Experience() {
     const { theme } = useTheme();
 
     return (
-        <section ref = {ref} id="experience" className = "scroll-mt-28 mb-28 sm:mb-40">
+        <section ref = {ref} id="experience" className = "relative scroll-mt-28 mb-28 sm:mb-40">
+            <div className="z-[-10] bg-[#FAD2E1] absolute top-[-5rem] h-[60rem] w-full rounded-full blur-[10rem] dark:bg-[#f7a3c0]"></div>
             <SectionHeading>Experience</SectionHeading>
             <VerticalTimeline lineColor = "">
                 {

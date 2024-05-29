@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import poshlorScreely from "@/public/poshlor_screely.png";
+import portfolioScreely from "@/public/portfolio_screely.png";
+import chesskeyScreely from "@/public/chesskey_screely.png";
+
 
 export const links = [
   {
@@ -12,20 +12,16 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
-  },
-  {
     name: "Projects",
     hash: "#projects",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Contact",
@@ -35,73 +31,73 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "First Internship",
+    location: "Rendezview",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Hired as first intern to help the product team use data to understand different pain points along user journeys.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "January 2021 - June 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Full Stack Software Engineer",
+    location: "Develop For Good, Stanford University",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Increased monthly donation volume by 29% by developing a responsive round-up modal for a merchant’s storefront allowing customers to round up purchases for charity, using React and Shopify Liquid.",
+    icon: React.createElement(CgWorkAlt),
+    date: "April 2021 - January 2022",
+  },
+  {
+    title: "Graduated From College",
+    location: "University of California, Berkeley",
+    description:
+      "Graduated from UC Berkeley with a B.S. in Electrical Engineering and Computer Science, and a minor in Data Science. Open to any full-time opportunities.",
+    icon: React.createElement(LuGraduationCap),
+    date: "December 2022",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Poshlor",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Designed and developed Poshlor, a Chrome extension for faster Poshmark closet sorting based on color themes",
+    tags: ["Typescript", "Chrome Ext. API", "Flask", "MongoDB", "Python", "HTMl/CSS"],
+    imageUrl: poshlorScreely,
   },
   {
-    title: "rmtDev",
+    title: "ChessKey",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Built a full-stack chess web app that allows users to quickly instantiate chess games with a shareable link.",
+    tags: ["Python", "Flask", "WebSockets", "PostgreSQL", "Tailwind", "JS", "HTML/CSS"],
+    imageUrl: chesskeyScreely,
   },
   {
-    title: "Word Analytics",
+    title: "Portfolio Website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Responsive personal website to showcase my past projects and experiences. Shoot me a message below!",
+    tags: ["React", "Typescript", "Next.js", "Tailwind", "Framer Motion", "Resend"],
+    imageUrl: portfolioScreely,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
+  "Java",
+  "C++",
+  "Javascript",
+  "SQL",
+  "Go",
+  "Node.js",
+  "Next.js",
+  "Flask",
+  "React",
+  "HTML/CSS",
+  "WebSockets",
+  "PostgreSQL",
+  "Express",
   "Framer Motion",
+  "UI/UX Design",
+  "Git",
+  "NumPy",
+  "GCP",
 ] as const;

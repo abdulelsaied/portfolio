@@ -4,11 +4,8 @@ export default function Footer() {
     return (
         <footer className="mb-10 px-4 text-center text-gray-500">
             <small className="mb-2 block text-xs">
-                &copy; Abdul El-Saied. All rights reserved. 
+                Made by <a href = "https://www.linkedin.com/in/abdulelsaied/" target = "_blank" className="font-semibold">Abdul El-Saied</a> in Berkeley, CA.
             </small>
-            <p className="text-xs">
-                <span className="font-semibold">About this website:</span> build with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
-            </p>
         </footer>
     )
 }

@@ -26,10 +26,11 @@ export default function Skills() {
 
     return (
         <section 
-            className = "mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+            className = "relative mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
             ref={ref}
             id="skills"
         >
+            <div className="z-[-10] bg-[#FF5733] absolute top-[-5rem] h-[25rem] w-full rounded-full blur-[10rem]"></div>
             <SectionHeading>My Skills</SectionHeading>
             <ul className ="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                 {

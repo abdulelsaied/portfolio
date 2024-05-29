@@ -27,17 +27,17 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
             className = "group mb-3 sm:mb-8 last:mb-0"
         >
             <section 
-                className = "bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 sm:group-even:pl-8 hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-                <div className = "pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+                className = "flex bg-gray-100 max-w-[50rem] border border-black/5 rounded-lg overflow-hidden md:pr-8 relative md:h-[20rem] mb-3 md:mb-8 last:mb-0 md:group-even:pl-32 hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+                <div className = "pt-4 pb-7 px-5 md:pl-10 md:pr-2 md:pt-10 md:max-w-[50%] flex flex-col h-full md:group-even:ml-[18rem]">
                     <h3 className = "text-2xl font-semibold">{title}</h3>
                     <p className = "mt-2 leading-relaxed text-gray-700 dark:text-white/70">{description}</p>
-                    <ul className = "flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                    <ul className = "flex flex-wrap mt-4 gap-2 md:mt-auto">
                         {tags.map((tag, index) => (
                             <li className = "bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70" key = {index}>{tag}</li>
                         ))}
                     </ul>
                 </div>
-                <Image src = {imageUrl} alt = "Project I worked on" quality = {95} className = "hidden sm:block absolute top-8 -right-40 w-[28.25rem] h-[28.25rem] rounded-t-lg shadow-2xl transition group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-hover:scale-105 "/>
+                <Image src = {imageUrl} alt = "Project I worked on" quality = {95} height={320} width={450} className = "hidden md:block absolute top-10 -right-16 rounded-t-lg shadow-2xl transition group-even:right-[initial] group-even:-left-16 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-hover:scale-105 "/>
             </section>
         </motion.div>
     )
