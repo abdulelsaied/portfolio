@@ -41,18 +41,6 @@ export default function Intro() {
                         />
 
                     </motion.div>
-                    <motion.span className = "absolute text-4xl bottom-0 right-0"
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{
-                            type: "spring",
-                            stiffness: 125,
-                            delay: 0.1, 
-                            duration: 0.7,
-                        }}
-                    >
-                    👋
-                    </motion.span>
                 </div>
             </div>
             <motion.h1
@@ -63,7 +51,7 @@ export default function Intro() {
             >
                 <TypeIt
                     options={{
-                        strings: ["Hello, I'm Abdul! I am an EECS graduate from UC Berkeley with experience in full-stack development. Looking for full-time SWE opportunities!"],
+                        strings: ["Hi, I'm Abdul! I am an EECS graduate from UC Berkeley and a current Master's of Computer Science student from Georgia Tech, with experience in full-stack development. Looking for SWE opportunities!"],
                         speed: 75,
                     }}
                 />
@@ -88,7 +76,7 @@ export default function Intro() {
                 </Link>
 
                 <a 
-                    href = "/abdulresume.pdf"
+                    href = "/abdule-resume-12-17.pdf"
                     download
                     className = "group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60">
                         Resume<HiDownload 

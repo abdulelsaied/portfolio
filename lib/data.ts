@@ -4,6 +4,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import poshlorScreely from "@/public/poshlor_screely.png";
 import portfolioScreely from "@/public/portfolio_screely.png";
 import chesskeyScreely from "@/public/chesskey_screely.png";
+import geographyScreely from "@/public/geographyScreely.png";
 
 
 export const links = [
@@ -50,9 +51,17 @@ export const experiencesData = [
     title: "Graduated From College",
     location: "University of California, Berkeley",
     description:
-      "Graduated from UC Berkeley with a B.S. in Electrical Engineering and Computer Science, and a minor in Data Science. Open to any full-time opportunities.",
+      "Graduated from UC Berkeley with a B.S. in Electrical Engineering and Computer Science, and a minor in Data Science. Open to any SWE opportunities.",
     icon: React.createElement(LuGraduationCap),
     date: "December 2022",
+  },
+  {
+    title: "Pursuing Master's of Computer Science",
+    location: "Georgia Tech",
+    description:
+      "Currently specializing in Interactive Intelligence. Planning on taking coursework related to AI, ML, Databases and other CS topics.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Expected 2026",
   },
 ] as const;
 
@@ -63,6 +72,13 @@ export const projectsData = [
       "Designed and developed Poshlor, a Chrome extension for faster Poshmark closet sorting based on color themes",
     tags: ["Typescript", "Chrome Ext. API", "Flask", "MongoDB", "Python", "HTMl/CSS"],
     imageUrl: poshlorScreely,
+  },
+  {
+    title: "Geography Benchmark AI ",
+    description:
+      "Designed an educational web app aimed at helping users learn about countries through interactive games.",
+    tags: ["React", "TypeScript", "Tailwind", "PostgreSQL", "Vite", "Node.js", "Express", "D3", "LLM"],
+    imageUrl: geographyScreely,
   },
   {
     title: "ChessKey",
@@ -84,7 +100,7 @@ export const skillsData = [
   "Python",
   "Java",
   "C++",
-  "Javascript",
+  "JavaScript/TypeScript",
   "SQL",
   "Go",
   "Node.js",
